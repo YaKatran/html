@@ -3,64 +3,94 @@
     <head>
         <meta charset="UTF-8">
         <title>Katran CV</title>
+        <link rel="stylesheet" href="styles.css">
         </head>
     <body>
-        <table>
-            <tr>
-                <td><img src="ava.jpg" width="200" alt="moyo foto"></td>
-                <td>        <h1>Vladimir Katran</h1>
-                    <p><em> Ya <strong> Karasique</strong></em></p>
-                    <p>Ya lublyu igtats v igri</p>
-                </td>
-            </tr>
-        </table>
-        
+        <div class="container">
 
-        <hr>
-        <h2>Moi suck seti</h2>
-        <ul type="square">
-            <li><a href="https://vk.com/katrasique" target="_blank">VK</a></li>
-            <li><a href="https://github.com/YaKatran" target="_blank">GitHub</a></li>
-        </ul>
-        <hr>
-        <h2>Moi hobbie</h2>
-        <ol type="I">
-            <li>Igri</li>
-            <li>Nastolki</li>
-            <li>tyanochki</li>
-        </ol>
-        <hr>
-        <h2>Popit raboti</h2>
-        <table border="2">
-            <thead></thead>
-            <tr>
-                <th>kompaniya</th>
-                <th>dolzhnost</th>
-                <th>vremya</th>
-            </tr>
-            <tr>
-                <td>administrachiya goroda luganska</td>
-                <td>sisadmin</td>
-                <td>2016-2021</td>
-            </tr>
-        </table>
-        <hr>
-        <h2>Drugaya stranitsa</h2>
-        <a href="New.html">Ssilka</a>
-        <hr>
-        <h1>Kontakti</h1>
-        <form>
-            <label for="name">vvedite imya</label>
-            <input type="text" id="name" placeholder="syuda pisat">
-            <br>
-            <label for="email">vvedite email</label>
-            <input type="text" id="email" placeholder="syuda pisat">
-            <br>
-            <label for="text">vvedite pizdezh</label>
-            <br>
-            <textarea name="suka" id="text" cols="30" rows="10"></textarea>
-            <br>
-            <input type="submit" value="Otpravit">
-        </form>
+        
+            <div class="info">
+                <img src="ava.jpg" alt="moyo foto" class="avatar"></td>
+                <div class="info-text">
+                    <h1>Vladimir Katran</h1>
+                <p> Ya <strong> Karasique</strong></p>
+                <p>Ya lublyu igtats v igri</p>
+
+                <h4>Moi suck seti</h4>
+                
+                <a href="https://vk.com/katrasique" target="_blank">VK</a>
+                |
+                <a href="https://github.com/YaKatran" target="_blank">GitHub</a>
+                </div>
+                
+                  
+            </div>
+                     
+           <div class="card bg-yellow">
+            <h2>Moi hobbie</h2>
+            <ol class="list" type="I">
+                <li>Igri</li>
+                <li>Nastolki</li>
+                <li>tyanochki</li>
+            </ol>
+           </div>
+            
+           <div class="card bg-green">
+            <h2>Popit raboti</h2>
+            <table class="table">
+                <tr>
+                    <td>administrachiya goroda luganska</td>
+                    <td>sisadmin</td>
+                    <td>2016-2021</td>
+                </tr>
+                <tr>
+                    <td>administrachiya goroda luganska</td>
+                    <td>sisadmin</td>
+                    <td>2016-2021</td>
+                </tr>
+                <tr>
+                    <td>administrachiya goroda luganska</td>
+                    <td>sisadmin</td>
+                    <td>2016-2021</td>
+                </tr>
+            </table>
+           </div>
+            
+            <div class="card bg-red link-list">
+                <h2>Drugaya stranitsa</h2>
+                <li><a href="New.html">Ssilka</a></li>
+                <li><a href="New.html">Ssilka</a></li>
+                
+            </div>
+            
+            <div class="contact">
+                <h2>Kontakti</h2>
+                <form>
+                    <div class="row">
+                        <div class="form-group">
+                            <label for="name">vvedite imya</label>
+                             <input type="text" id="name" placeholder="syuda pisat">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">vvedite email</label>
+                            <input type="text" id="email" placeholder="syuda pisat">    
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="text">vvedite pizdezh</label>
+                
+                        <textarea name="suka" id="text" cols="30" rows="10"></textarea>
+                        
+                        
+                    </div>
+                    
+                        <input class="btn" type="submit" value="Otpravit">
+                    
+                    
+                </form>
+            </div>
+            
+        </div>
     </body>
 </html>
